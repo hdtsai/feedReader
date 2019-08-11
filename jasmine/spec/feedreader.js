@@ -9,8 +9,7 @@ $(function() {
          * empty.
          */
         it('are defined', () => {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).toBeGreaterThan(0);
+            expect(allFeeds).toBeTruly();
         });
 
         /* It's a test that loops through each feed
@@ -19,8 +18,7 @@ $(function() {
          */
         it('url defined', () => {
             allFeeds.forEach(function(feed){
-                expect(feed.url).toBeDefined();
-                expect(feed.url.length).toBeGreaterThan(0);
+                expect(feed.url).toBeTruly();
             });
         });
 
@@ -30,8 +28,7 @@ $(function() {
          */
         it('name defined', () => {
             allFeeds.forEach(function(feed){
-                expect(feed.name).toBeDefined();
-                expect(feed.name.length).toBeGreaterThan(0);
+                expect(feed.name)..toBeTruly();
             });
         });
     });
