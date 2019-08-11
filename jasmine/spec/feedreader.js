@@ -28,7 +28,7 @@ $(function() {
          */
         it('name defined', () => {
             allFeeds.forEach(function(feed){
-                expect(feed.name)..toBeTruthy();
+                expect(feed.name).toBeTruthy();
             });
         });
     });
